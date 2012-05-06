@@ -1,6 +1,6 @@
 # Redis::Server
 
-TODO: Write a gem description
+starts a redis server
 
 ## Installation
 
@@ -18,7 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+require 'redis/server'
+s = Redis::Server.new
+s.start
+s.connect.set(:foo,:bar)
 
 ## Contributing
 
